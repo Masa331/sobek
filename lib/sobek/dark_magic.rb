@@ -2,6 +2,7 @@ require 'sobek'
 
 String.include Sobek::StringUtils
 Array.include Sobek::ArrayUtils
+Array.include Sobek::IntegerUtils
 
 module DarkMagic
   def r=(result)
