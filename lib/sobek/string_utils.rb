@@ -86,6 +86,22 @@ module Sobek
     def to_call_arg
       unpack1('H*').ljust(64, '0')
     end
+
+    def to_function_signature
+      keccak256[0..7]
+    end
+
+    def format_address
+      if valid_address?
+        Eth::Utils.format_address self
+      else
+        self
+      end
+    end
+
+    def valid_address?
+      Eth::Utils.valid_address? self
+    end
   end
 end
 

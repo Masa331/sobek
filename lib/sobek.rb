@@ -1,3 +1,4 @@
+require 'eth'
 require 'sobek/string_utils'
 require 'sobek/array_utils'
 require 'sobek/integer_utils'

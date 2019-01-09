@@ -21,5 +21,6 @@ Gem::Specification.new do |spec|
   spec.executables << 'sobek'
 
   spec.add_dependency 'pry'
+  spec.add_dependency 'eth'
   spec.add_development_dependency 'bundler'
 end
