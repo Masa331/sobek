@@ -1,6 +1,6 @@
 # Sobek
 
-This is a tool for various Ethereum utilities.
+Ethereum utilities console.
 
 ## TODO/ideas:
 
@@ -12,7 +12,7 @@ This is a tool for various Ethereum utilities.
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/sobek.
+Bug reports and pull requests are welcome on GitHub at https://github.com/masa331/sobek.
 
 ## License
 
