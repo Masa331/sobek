@@ -9,6 +9,7 @@ Ethereum utilities console.
 * Generation of addresses from private keys
 * and database of these
 * address checksum check/generation
+* connection to ENS
 
 ## Contributing
 
