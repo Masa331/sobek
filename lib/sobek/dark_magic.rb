@@ -5,30 +5,18 @@ Array.include Sobek::ArrayUtils
 Integer.include Sobek::IntegerUtils
 
 module DarkMagic
-  def r=(result)
-    $last_sob_result = result
+  def q=(result)
+    $sobek_last_hex = result
   end
 
-  def r
-    $last_sob_result
-  end
-
-  def s=(result)
-    $last_hex_string = result
-  end
-
-  def s
-    $last_hex_string
-  end
-
-  def d
-    $last_sob_result.desc if $last_sob_result
+  def q
+    $sobek_last_hex
   end
 
   def method_missing(name, *args)
     if name.to_s.hex_bytes?
       res = name.to_s
-      self.s = res
+      self.q = res
 
       res
     else

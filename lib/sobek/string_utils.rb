@@ -8,6 +8,11 @@ module Sobek
       parse
     end
 
+    def desc2
+      viewer = HexViewer.new(self)
+      viewer.call
+    end
+
     def parse
       res =
         if method_call?
@@ -17,7 +22,6 @@ module Sobek
         end
 
       res = res.first if res.length == 1
-      self.r = res
       res
     end
 
