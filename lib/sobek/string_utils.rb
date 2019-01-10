@@ -10,7 +10,7 @@ module Sobek
 
     def desc2
       viewer = HexViewer.new(self)
-      viewer.call
+      viewer.print
     end
 
     def parse
