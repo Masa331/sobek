@@ -1,3 +1,4 @@
+# "A very strong secret password :)" : "412076657279207374726f6e67207365637265742070617373776f7264203a29"
 module Sobek
   class HexViewer
     class Line
@@ -99,7 +100,7 @@ module Sobek
 
       formatted_lines = lines.map do |line|
         { separated: line.hexa.join(' '),
-          ascii: line.ascii.join(' ')
+          ascii: line.ascii.join('')
         }
       end
     end
